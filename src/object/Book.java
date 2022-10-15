@@ -2,11 +2,11 @@ package object;
 
 public class Book {
     private final String title;
-    private final String author ;
+    private final Author author ;
     private int publicationYear;
 
 
-    public Book(String title, String author, int publicationYear) {
+    public Book(String title, Author author, int publicationYear) {
         this.title = title;
         this.author = author;
         this.publicationYear = publicationYear;
@@ -16,7 +16,7 @@ public class Book {
         return this.title;
     }
 
-    public String getAuthor() {
+    public Author getAuthor() {
         return this.author;
     }
 
